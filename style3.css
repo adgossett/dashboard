@@ -1,0 +1,430 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.main {
+    background-color: #f1f5f9;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar ul li.active {
+    background-color: #fff;
+    color: #dd2f6e;
+    border-radius: 50px;
+}
+
+.sidebar {
+    background-color: #dd2f6e;
+    color: #fff;
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+}
+
+.user-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    padding: 5px;
+    flex: 1;
+    font-size: 16px;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #dd2f6e;
+    color: #fff;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    flex-basis: calc(25% - 20px);
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card i {
+    font-size: 30px;
+    color: #dd2f6e;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight:
+}
+
+
+
+
+.main {
+    background-color: #f1f5f9;
+
+}
+
+
+.container {
+    display: flex;
+}
+
+.sidebar ul li.active {
+    background-color: #fff;
+    color: #DD2F6E;
+    border-radius: 50px;
+}
+
+.sidebar {
+    background-color: #DD2F6E;
+    color: #fff;
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+}
+
+
+.user-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    padding: 5px;
+    flex: 1;
+    font-size: 16px;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #DD2F6E;
+    color: #fff;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    flex-basis: calc(25% - 20px);
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card i {
+    font-size: 30px;
+    color: #DD2F6E;
+
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.card p.amount {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.nav h1 {}
+
+table {
+    border-collapse: collapse;
+    width: 200%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #fff;
+    color: #000;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table td:first-child {
+    font-weight: bold;
+}
+
+table td:last-child {
+    text-align: right;
+}
+
+.see-all {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #DD2F6E;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/*---talbe code---*/
+.shorter-table {
+    width: 40%;
+}
+
+
+.container .content .main table {
+    margin-left: 0;
+    border-radius: 2rem;
+
+}
+
+/*--- second talbe code---*/
+.table-container {
+    border-radius: 2rem;
+}
+
+.table-container table {
+    width: 100%;
+    border-radius: 2rem;
+    background-color: #eee;
+
+
+}
+
+
+
+.shorter-table td {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.shorter-table th {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+
+}
+
+.shorter-table {
+    float: right;
+}
+
+
+
+/*---modern tables---*/

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Split Dashboard</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,200;0,500;1,200&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-NgGix9uU6rGiq7Vz2f+jdwvRKGnUcE/GIDiys3F6lZU6V5Py5ox5S5MeeqOYgev5y33H4d4P4FfQj8cxvMY9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    php
+    Copy code
+    <script src="script.js"></script>
+    <script src="dom.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1><i class="fas fa-code"></i>Accusoft</h1>
+            <ul>
+                <li class="active"><a href="#">Customers</a></li>
+                <li><a href="#"><i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-boxes"></i></a></li>
+                <li><a href="#"><i class="fas fa-users"></i></a></li>
+            </ul>
+            <div class="user-info">
+                <img src="user-avatar.jpg" alt="User Avatar">
+                <p>Welcome, John Doe!</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>
+                    <i class="fas fa-bars"></i>
+                    Dashboard
+                </h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+                <div class="user-info">
+                    <img src="user-avatar.jpg" alt="User Avatar">
+                    <p>Welcome, John Doe!</p>
+                </div>
+            </div>
+            <div class="main">
+                <p>Welcome to your dashboard. Here you can view and manage data.</p>
+            </div>
+            <div class="main">
+                <div class="cards">
+                    <div class="card">
+                        <i class="fas fa-users"></i>
+                        <h3>Customers</h3>
+                        <p class="amount">680</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-box"></i>
+                        <h3>Inventory</h3>
+                        <p class="amount">100</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Orders</h3>
+                        <p class="amount">300</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>Income</h3>
+                        <p class="amount">$45,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <h2>Recent Projects</h2>
+                <div class="table-container">
+                    <table class="shorter-table">
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Project A</td>
+                                <td>2022-01-01</td>
+                                <td>2022-06-30</td>
+                                <td>In progress</td>
+                                <td><a href="#" class="see-all">See All</a></td>
+                            </tr>
+                            <tr>
+                                <td>Project B</td>
+                                <td>2022-02-01</td>
+                                <td>2022-07-31</td>
+                                <td>Completed</td>
+                                <td><a href="#" class="see-all">See All</a></td>
+                            </tr>
+                            <tr>
+                                <td>Project C</td>
+                                <td>2022-03-01</td>
+                                <td>2022-08-31</td>
+                                <td>Cancelled</td>
+                                <td><a href="#" class="see-all">See All</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="shorter-table">
+                        <thead>
+                            <tr>
+                                <th>User Image</th>
+                                <th>Phone</th>
+                                <th>Messages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="user1.jpg" alt="User Image"></td>
+                                <td><i class="fas fa-phone"> 555-55-5555</i></td>
+                                <td><i class="fas fa-envelope"></i></td>
+                            </tr>
+                            <tr>
+                                <td><img src="user2.jpg" alt="User Image"></td>
+                                <td><i class="fas fa-phone"> 555-55-5555</i></td>
+                                <td><i class="fas fa-envelope"></i></td>
+                            </tr>
+                            <tr>
+                                <td><img src="user3.jpg" alt="User Image"></td>
+                                <td><i class="fas fa-phone"> 555-55-5555</i></td>
+                                <td><i class="fas fa-envelope"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideout-button" onclick="toggleSlideOut()"><i class="fas fa-arrow-right"></i></div>
+    <section class="website-section">
+        <h2>Website Section</h2>
+        <div class="website-content">
+            <img src="website-image.jpg" alt="Website Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet felis et erat vehicula
+                scelerisque id et quam. Maecenas tincidunt nisl ac ante pharetra, sed pharetra metus sagittis.
+                Vivamus tempus ligula at tortor vestibulum aliquet. Suspendisse et turpis eu felis posuere
+                bibendum. Proin rhoncus lacus eu dolor condimentum dignissim.</p>
+            <iframe src="www.violet-designz.com"></iframe>
+        </div>
+    </section>
+    <script>
+        function toggleSlideOut() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('slide-out');
+        }
+    </script>
+</body>
+
+</html>

@@ -17,18 +17,29 @@
 
     <script src="script.js"></script>
     <script src="dom.js"></script>
+
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar">
-            <h1><i class="fas fa-code"></i> Accusoft</h1>
+            <h1><i class="fas fa-code"></i>Accusoft</h1>
             <ul>
                 <li class="active"><a href="#" style="color:#DD2F6E;">Customers</a></li>
                 <li><a href="#"><i class="fas fa-project-diagram ">Projects</i></a></li>
                 <li><a href="#"><i class="fas fa-shopping-cart">Orders</i></a></li>
-                <li><a href="#"><i class="fas fa-boxes"></i></a></li>
+                <li><a href="#"><i class="fas fa-boxes">Inventory</i></a></li>
 
+                <style>
+                    h1 {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    h1 i {
+                        margin-right: 5px;
+                    }
+                </style>
 
             </ul>
             <section>
@@ -47,10 +58,50 @@
                     <input type="text" placeholder="Search...">
                     <button>Search</button>
                 </div>
-                <div class="user-info">
-                    <img src="user-avatar.jpg" alt="User Avatar">
-                    <p>Welcome, John Doe!</p>
-                </div>
+                <section>
+                    <div class="user-info">
+                        <p class="welcome-text">Welcome, John Doe!</p>
+                        <div class="dropdown">
+                            <img src="fashion-girl-2021-09-02-02-56-39-utc.jpg" alt="User Avatar" class="avatar">
+                            <div class="dropdown-content">
+                                <a href="#">Profile</a>
+                                <a href="#" class="upload-image-btn">Upload Image</a>
+                                <a href="#">Settings</a>
+                                <a href="#">Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-modal">
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <h3>Upload Profile Image</h3>
+                            <form>
+                                <input type="file" accept="image/*">
+                                <button type="submit">Upload</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    // JavaScript code for the dropdown button
+                    var dropdownBtn = document.querySelector(".dropdown .avatar");
+                    var dropdownContent = document.querySelector(".dropdown-content");
+
+                    dropdownBtn.addEventListener("click", function () {
+                        dropdownContent.classList.toggle("show");
+                    });
+
+                    window.addEventListener("click", function (event) {
+                        if (!event.target.matches(".dropdown .avatar")) {
+                            if (dropdownContent.classList.contains("show")) {
+                                dropdownContent.classList.remove("show");
+                            }
+                        }
+                    });
+
+                    // JavaScript code for the upload modal
+                    // ... Your upload modal JavaScript code here ...
+                </script>
             </div>
             <div class="main">
                 <p>Welcome to your dashboard. Here you can view and manage data.</p>
@@ -166,6 +217,7 @@
             sidebar.classList.toggle('google-slide-out');
         }
     </script>
+
 </body>
 
 </html>
